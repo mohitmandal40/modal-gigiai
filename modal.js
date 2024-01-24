@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("app").appendChild(modal);
 
   modal.style.display = "block";
+//   test
 
   modal
     .querySelector(".close")
@@ -20,3 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
     if (event.target == modal) modal.style.display = "none";
   });
 });
+
+
+https://cdn.jsdelivr.net/gh/mohitmandal40/modal-gigiai@lastes/modal.js
