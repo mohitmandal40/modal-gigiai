@@ -1,10 +1,11 @@
+console.log("alsdjkfslkd");
 var modal = document.createElement("div");
 (modal.id = "myModal"),
   (modal.className = "modal-list"),
   (modal.innerHTML = `
     <div class="modal-content">
       <span class="close">&times;</span>
-      <p>Some text in the Modal..</p>
+      <button class="banner-btn">FIND A HOME</button>
     </div>`),
   document.getElementById("app").appendChild(modal),
   localStorage.getItem("showPopup") ||
@@ -12,6 +13,10 @@ var modal = document.createElement("div");
   "true" === localStorage.getItem("showPopup") &&
     modal.classList.add("modal-visible"),
   modal.querySelector(".close").addEventListener("click", () => {
+    modal.classList.remove("modal-visible"),
+      localStorage.setItem("showPopup", "false");
+  }),
+  modal.querySelector(".banner-btn").addEventListener("click", () => {
     modal.classList.remove("modal-visible"),
       localStorage.setItem("showPopup", "false");
   }),
