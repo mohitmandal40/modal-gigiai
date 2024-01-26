@@ -1,0 +1,118 @@
+.banner-btn {
+  position: absolute !important;
+  top: 73% !important;
+  left: 96px !important;
+  border: none !important;
+  background: #048efb !important;
+  color: white !important;
+  font-weight: bold !important;
+  cursor: pointer !important;
+  width: 212px !important;
+  height: 62px !important;
+  display: flex !important;
+  padding: 24px 40px !important;
+  align-items: center !important;
+  gap: 10px !important;
+
+  color: #fff !important;
+  font-size: 20px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 64px !important;
+  text-transform: uppercase !important;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    height: 606px !important;
+  }
+
+  .close {
+    align-self: flex-end !important;
+  }
+
+  .banner-btn {
+    padding: 16px 40px !important;
+    justify-content: center !important;
+    left: 101px !important;
+    font-size: 16px !important;
+    line-height: 16px !important;
+  }
+}
+
+@media (max-width: 580px) {
+  .modal-content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    background-image: url("https://cdn.chime.me/image/fs/cmsbuild/2024125/12/original_8e2b552c-4d76-410f-b90c-0ec7e23f38b7.png") !important;
+    width: 388px !important;
+    height: 495px !important;
+  }
+
+  .close {
+    align-self: flex-end !important;
+  }
+
+  .banner-btn {
+    padding: 16px 40px !important;
+    justify-content: center !important;
+    width: 324px !important;
+    height: 43px !important;
+    left: unset !important;
+    font-size: 16px !important;
+    line-height: 16px !important;
+  }
+}
+
+.md-content.richtext .mg-container {
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+.custom-richtext-content > div > span > img {
+  width: 100% !important;
+}
+
+.banner-desktop,
+.banner-tablet,
+.banner-mobile {
+  display: none !important;
+}
+
+@media (max-width: 1920px) {
+  .banner-2k,
+  .banner-tablet,
+  .banner-mobile {
+    display: none !important;
+  }
+  .banner-desktop {
+    display: block !important;
+  }
+}
+
+.md-search.standard.map.hide-below {
+  z-index: 0 !important;
+}
+
+@media (max-width: 768px) {
+  .banner-2k,
+  .banner-desktop,
+  .banner-mobile {
+    display: none !important;
+  }
+  .banner-tablet {
+    display: block !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .banner-2k,
+  .banner-desktop,
+  .banner-tablet {
+    display: none !important;
+  }
+  .banner-mobile {
+    display: block !important;
+  }
+}
