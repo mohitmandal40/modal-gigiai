@@ -80,6 +80,11 @@
   display: none !important;
 }
 
+.banner-2k {
+  height: 180px;
+  background: #1466cc;
+}
+
 @media (max-width: 1920px) {
   .banner-2k,
   .banner-tablet,
@@ -95,6 +100,11 @@
   z-index: 0 !important;
 }
 
+.banner-2k {
+  height: 180px !important;
+  background: #1466cc !important;
+}
+
 @media (max-width: 768px) {
   .banner-2k,
   .banner-desktop,
@@ -106,7 +116,7 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   .banner-2k,
   .banner-desktop,
   .banner-tablet {

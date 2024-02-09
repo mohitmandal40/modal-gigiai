@@ -1,0 +1,367 @@
+<style>
+  .search-text,
+  .search-choose {
+    z-index: 10 !important;
+  }
+  .header-bg,
+  .house-status {
+    background: #000 !important;
+  }
+
+  :root {
+    --gg-bg-accent: white;
+    --color-title: black !important;
+    --color-info: black !important;
+    --color-label: black !important;
+    --color-text: black !important;
+  }
+
+  .schedule-agent-info,
+  .fashion-booking-info .call-phone,
+  .fashion-booking-info .line {
+    display: none !important;
+  }
+  a.item.phone {
+    display: none !important;
+  }
+  .swiper {
+    overflow: hidden !important;
+  }
+  .timezone {
+    font-size: 12px;
+    text-align: right;
+    margin-top: 24px;
+    margin-right: 20px;
+    color: black !important;
+  }
+  .pop .icon-close {
+    z-index: var(--level-high) !important;
+  }
+  @media only screen and (orientation: landscape) and (max-width: 800px) {
+    .pop .icon-close {
+      top: 70px !important;
+    }
+    .standard-detail-schedule {
+      background-color: white;
+      border-radius: 8px 8px 0 0;
+      min-height: 100%;
+      max-width: 100% !important;
+    }
+  }
+
+  .schedule-appointment.content {
+    overflow: visible !important;
+  }
+
+  .standard-schedule-appointment.content {
+    overflow: visible !important;
+  }
+
+  .classic-detail-schedule {
+    overflow: visible !important;
+  }
+
+  .schedule-pop-container {
+    height: unset;
+  }
+
+  .detail-info-header .info .price-caculator .caculator {
+    width: fit-content;
+    position: initial !important;
+  }
+
+  .detail-info-header .info .price-caculator {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+.site.listing-detail.mobile .detail-bottom-menu {
+    width: 100% !important;
+    border-radius: 0 !important;
+    bottom: 0 !important;
+    padding: 1rem 2em !important;
+    height: 154px !important;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: space-between;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .md-property-history .list-property-history .list-box li {
+      padding: 15px !important;
+    }
+    .detail-bottom-menu {
+      width: 100% !important;
+      border-radius: 0 !important;
+      bottom: 0 !important;
+      padding: 1rem 2em !important;
+      height: 154px !important;
+      align-items: center;
+      gap: 1rem;
+      justify-content: space-between;
+    }
+    .detail-bottom-menu .item.next,
+    .detail-bottom-menu .item.prev {
+      display: none !important;
+    }
+
+    .detail-bottom-menu .item.phone,
+    .detail-bottom-menu .item.tour {
+      background: var(--color-theme) !important;
+      color: var(--color-background) !important;
+      height: 38px;
+      font-size: 16px;
+      font-family: var(--font-bold);
+      max-width: 180px;
+    }
+
+    .detail-bottom-menu .item.phone .iconfont,
+    .detail-bottom-menu .item.tour .iconfont {
+      display: none !important;
+    }
+
+    .detail-bottom-menu .item .name {
+      margin-left: 0 !important;
+    }
+
+    .detail-bottom-menu .price-container {
+      display: flex;
+      flex-direction: column;
+      margin-top: 0;
+    }
+    .detail-bottom-menu .price-title {
+      font-weight: 800;
+      font-size: 16px;
+    }
+    .detail-bottom-menu b {
+      font-weight: 800;
+      font-size: 24px;
+    }
+    .detail-bottom-menu label {
+      font-weight: 400;
+      font-size: 12px;
+      text-transform: lowercase;
+    }
+
+    .detail-bottom-menu .item:after {
+      content: none !important;
+    }
+
+    .classic-detail-schedule {
+      overflow: hidden !important;
+    }
+
+    .schedule-pop-container {
+      height: 100%;
+    }
+  }
+  .request-msg {
+    color: var(--color-disable) !important;
+    padding-top: 5px;
+  }
+  .standard-detail-schedule .icon-smallphone {
+    display: none !important;
+  }
+  .md-detail-info .detail-info-group .key-info .info-des .info-content {
+    font-size: 1.2em !important;
+    line-height: 1.5 !important;
+  }
+  .md-detail-info.standard .detail-info-header .pc .price-caculator .caculator {
+    margin-left: 0 !important;
+  }
+  .md-detail-info.standard .detail-info-header .pc .price-caculator {
+    flex-direction: column;
+  }
+  .md-content.richtext .mg-container {
+    margin: 0 !important;
+    width: 100% !important;
+  }
+  .custom-richtext-content > div > span > img {
+    width: 100% !important;
+  }
+  .banner-desktop,
+  .banner-tablet,
+  .banner-mobile {
+    display: none;
+  }
+  @media (max-width: 1920px) {
+    .banner-2k,
+    .banner-tablet,
+    .banner-mobile {
+      display: none;
+    }
+    .banner-desktop {
+      display: block;
+    }
+  }
+  @media (max-width: 768px) {
+    .banner-2k,
+    .banner-desktop,
+    .banner-mobile {
+      display: none;
+    }
+    .banner-tablet {
+      display: block;
+    }
+  }
+  @media (max-width: 400px) {
+    .banner-2k,
+    .banner-desktop,
+    .banner-tablet {
+      display: none;
+    }
+    .banner-mobile {
+      display: block;
+    }
+  }
+  .custom-richtext-content > div {
+    line-height: 0 !important;
+  }
+  .mg-container h4,
+  .detail-title,
+  .address-container span,
+  .schedule-title {
+    color: #000000 !important;
+  }
+  span.info-title,
+  p.detail-content,
+  span.info-data {
+    font-size: 16px !important;
+    color: #222222 !important;
+  }
+  @media (max-width: 800px) {
+    .key-info .content .info-content .info-title {
+      white-space: normal !important;
+      line-height: 120% !important;
+    }
+  }
+
+  .detail-info-header {
+    --color-disable: black !important;
+    --color-label: black !important;
+  }
+
+  .standard-detail-schedule {
+    --color-disable: black !important;
+  }
+  .house-status.v3.open-house,
+  .search-seo .action {
+    color: #249bff !important;
+  }
+  .mls-provided {
+    --color-label: #222222 !important;
+  }
+  .md-house-listing .sub-title,
+  .md-house-listing span,
+  .house-detail .property,
+  .house-detail .status,
+  .ppt,
+  .list-header span,
+  .avg-diff-text,
+  .list-sub-header,
+  .property-price,
+  .property-status,
+  .property-date,
+  .house-list.template4 .header p,
+  .share-item {
+    color: #222222 !important;
+  }
+
+  .md-search-seo .search-seo .group .title,
+  .mls-desc-tip {
+    color: #000000 !important;
+  }
+
+  .house-info .house-provided {
+    color: #8b93a7 !important;
+  }
+
+  @media (max-width: 890px) {
+    .on-site .detail-content {
+      display: flex !important;
+      flex-direction: column !important;
+    }
+    .on-site .detail-content .tiny-site {
+      padding-left: 0 !important;
+    }
+  }
+  .md-detail-info.standard .detail-info-header .pc,
+  .detail-info-header .mobile {
+    display: block !important;
+  }
+  
+ .site.listing-detail.mobile  [id^='iFrameResizer'] {
+    height: 1031px !important;
+  }
+  
+  .tally-popup{
+    box-shadow: none !important; 
+  }
+ 
+  
+ .detail-info-header.pc .tour-btn-container.classic .btn-item.save{
+  display: block !important;
+}
+  
+  .buttons-mobile{
+    text-align: center;
+  }
+  
+  .site.listing-detail.mobile .banner-top.mg-container{
+  background: transparent;
+}
+  
+  .banner-2k {
+  height: 180px !important;
+  background: #1466cc !important;
+}
+  
+  .tippy-box {
+    padding: 10px;
+}
+  
+</style>
+
+<script>
+  setTimeout(()=>{
+    
+ 
+window.addEventListener("message", function (e) {
+  if (e.origin === "https://tally.so") {
+    try {
+      const data = JSON.parse(e.data);
+      if (!data) return;
+      if (data.event === "Tally.FormSubmitted") {
+        let l = {
+          event: "make_offer_gigi",
+          user_id: window?.siteAppVm?.user?.id,
+          timestamp: +new Date(),
+          have_you_seen_this_home_in_person:
+            data.payload?.fields[0]?.answer?.value,
+          have_you_been_preapproved: data.payload?.fields[1]?.answer?.value,
+          first_name: data.payload?.fields[2]?.answer?.value,
+          last_name: data.payload?.fields[3]?.answer?.value,
+          email_form: data.payload?.fields[4]?.answer?.value,
+          phone_form: data.payload?.fields[5]?.answer?.value,
+          address: data.payload?.fields[6]?.answer?.value,
+          isRegister: data.payload?.fields[11]?.answer?.value,
+          property_url: data.payload?.fields[12]?.answer?.value,
+        };
+        window?.siteDataLayer?.push?.({
+          ...l,
+          phone_number: window?.siteAppVm?.user?.phoneNumber || "",
+          email: window?.siteAppVm?.user?.account || "",
+        });
+        // window?.gtag?.("event", "filter_applied", {
+        //   ...l,
+        //   send_to: " G-B2FRN3VGWQ",
+        // });
+      }
+    } catch (e) {}
+  }
+});
+     },1000)
+
+</script>
